@@ -1,0 +1,41 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//nota 1 = 7%
+		Evaluacion evaluacionRamo1 = new Evaluacion(1, 7, 6.0);
+		//nota 2 =14%
+		Evaluacion evaluacionRamo2 = new Evaluacion(1, 14, 5.0);
+		//nota3 = 21%
+		Evaluacion evaluacionRamo3 = new Evaluacion(1, 21, 6.5);
+		//nota4 = 7%
+		Evaluacion evaluacionRamo4 = new Evaluacion(1, 7, 6.8);
+		//nota5 = 7%
+		Evaluacion evaluacionRamo5 = new Evaluacion(1, 7, 5.7);
+		//nota6 = 14%
+		Evaluacion evaluacionRamo6 = new Evaluacion(1, 14, 6.3);
+		
+		
+		
+		double total = evaluacionRamo1.notaPonderada()+
+						evaluacionRamo2.notaPonderada()+
+						evaluacionRamo3.notaPonderada()+
+						evaluacionRamo4.notaPonderada()+
+						evaluacionRamo5.notaPonderada()+
+						evaluacionRamo6.notaPonderada();
+		
+		System.out.println(total);
+				
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

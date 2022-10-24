@@ -1,0 +1,72 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		//bienvenida
+		
+		System.out.println("      Menu automatizado ingreso de notas");
+		System.out.println("debera ingresar las siguientes 6 notas");
+		System.out.println("--------------------------------------");
+		
+		
+		System.out.println("ingrese la nota 1: ");		
+		double nota1 = entrada.nextDouble();
+		
+		
+		System.out.println("ingrese la nota 2: ");	
+		double nota2 = entrada.nextDouble();
+		System.out.println("ingrese la nota 3: ");	
+		double nota3 = entrada.nextDouble();
+		System.out.println("ingrese la nota 4: ");	
+		double nota4 = entrada.nextDouble();
+		System.out.println("ingrese la nota 5: ");	
+		double nota5 = entrada.nextDouble();
+		System.out.println("ingrese la nota 6: ");	
+		double nota6 = entrada.nextDouble();	
+		
+		
+		//nota 1 = 7%
+		Evaluacion evaluacionRamo1 = new Evaluacion(1, 7, nota1);
+		//nota 2 =14%
+		Evaluacion evaluacionRamo2 = new Evaluacion(2, 14, nota2);
+		//nota3 = 21%
+		Evaluacion evaluacionRamo3 = new Evaluacion(3, 21, nota3);
+		//nota4 = 7%
+		Evaluacion evaluacionRamo4 = new Evaluacion(4, 7, nota4);
+		//nota5 = 7%
+		Evaluacion evaluacionRamo5 = new Evaluacion(5, 7, nota5);
+		//nota6 = 14%
+		Evaluacion evaluacionRamo6 = new Evaluacion(6, 14, nota6);
+		
+		
+		
+		double total = evaluacionRamo1.notaPonderada()+
+						evaluacionRamo2.notaPonderada()+
+						evaluacionRamo3.notaPonderada()+
+						evaluacionRamo4.notaPonderada()+
+						evaluacionRamo5.notaPonderada()+
+						evaluacionRamo6.notaPonderada();
+		
+		System.out.println("La nota ponderada del alumno equivalente al 70% es: "+total);
+				
+		if(total>3.5) {
+			System.out.println("el alumno tiene derecho a examen, ya que tiene una nota ponderada mayor 3.5 ");
+		}
+		
+		else {
+			System.out.println("el alumno no tiene derecho a examen ya que tiene una nota ponderada menor a 3.5");
+		}
+		
+		
+	}
+	
+	
+
+}
