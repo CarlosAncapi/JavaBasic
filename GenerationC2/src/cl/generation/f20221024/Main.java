@@ -32,9 +32,27 @@ public class Main {
 		Integer numero2 =2;// variable numerica -2^31 y +2^31
 		//numero2.
 		
-		// un int a long, un log a float y un long a double 
-		int pruebaInt = 1000;
-		Long pruebaLong = Long.valueOf(pruebaInt);
+		// un int a long, un long a float y un long a double 
+		int prueba1 = 1000;
+		Long prueba2 = Long.parseLong(prueba1+"");
+		// lo que esta dentro del parentesis se transforma en string al concatenar el +""
+		float prueba3 = Float.parseFloat(prueba2+"");
+		
+		double prueba4 = Double.parseDouble(prueba3+"");
+		
+		float prueba5 = Float.parseFloat(prueba4+"");
+		
+		Long prueba6 = Long.parseLong(prueba5+"");
+		
+		//Integer prueba7 = int.valueOf(prueba6);
+		
+				
+		
+		//value of retorna un integer, una varaiable no primitiva
+		
+		//parseint retorna un valor primitivo
+		
+		
 		
 		
 
