@@ -1,0 +1,24 @@
+package cl.generation.f20221025;
+
+import java.util.ArrayList;
+
+public class ArregloDinamico {
+
+	public static void main(String[] args) {
+		//Arraylist
+		//1. definicion
+		//ArrayList<TIPODATO> nombre_array= new ArrayList<TIPODEDATO>();
+		ArrayList<String> relatores = new ArrayList<String>();
+		//2. agregar valores al arreglo
+		relatores.add("Alejandro");
+		relatores.add("Andrea");
+		relatores.add("Laura");
+		relatores.add("Pamela");
+		relatores.add("Hector");
+		relatores.add("Maggi");
+		relatores.add("Israel");
+		System.out.println(relatores);
+		
+	}
+
+}
