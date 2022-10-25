@@ -23,8 +23,8 @@ public class Main {
 		
 		//short y byte 
 		
-		System.out.println(long1 +" / "+decimal+" / "+double1);
-		System.out.println("---------------------------");
+		System.out.println(long1 +" "+decimal+" "+double1);
+		
 		//variable objeto
 		
 		String palabra = "Qwerty";
@@ -33,40 +33,18 @@ public class Main {
 		//numero2.
 		
 		// un int a long, un long a float y un long a double 
-		
 		int prueba1 = 1000;
-		System.out.println("variable prueba 1 es int: "+prueba1);
-		System.out.println("---------------------------");
-		
 		Long prueba2 = Long.parseLong(prueba1+"");
-		System.out.println("variable prueba 2 es long: "+prueba2);
-		System.out.println("---------------------------");
-		
-		
+		// lo que esta dentro del parentesis se transforma en string al concatenar el +""
 		float prueba3 = Float.parseFloat(prueba2+"");
-		System.out.println("variable prueba 3 es flot: "+prueba3);
-		System.out.println("---------------------------");
-		
 		
 		double prueba4 = Double.parseDouble(prueba3+"");
-		System.out.println("variable prueba 4 es double: "+prueba4);
-		System.out.println("---------------------------");
-		
-		//ahora al reves
-		
 		
 		float prueba5 = Float.parseFloat(prueba4+"");
-		System.out.println("variable prueba 5 es float: "+prueba5);
-		System.out.println("---------------------------");
 		
-		long prueba6 = (long) prueba5;
-		System.out.println("variable prueba 6 es long: "+prueba6);
-		System.out.println("---------------------------");
+		Long prueba6 = Long.parseLong(prueba5+"");
 		
-		
-		int prueba7 = Math.round(prueba6);
-		System.out.println("variable prueba 7 es int: "+prueba7);
-		System.out.println("---------------------------");
+		//Integer prueba7 = int.valueOf(prueba6);
 		
 				
 		

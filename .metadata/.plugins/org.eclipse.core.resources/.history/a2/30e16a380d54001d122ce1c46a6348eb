@@ -24,7 +24,7 @@ public class Main {
 		//short y byte 
 		
 		System.out.println(long1 +" / "+decimal+" / "+double1);
-		System.out.println("---------------------------");
+		
 		//variable objeto
 		
 		String palabra = "Qwerty";
