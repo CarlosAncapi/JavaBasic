@@ -1,0 +1,20 @@
+package cl.generation.f20221026;
+
+import java.util.Scanner;
+
+public class CapturarDatos {
+
+	public static void main(String[] args) {
+		// Capturar datos ingresados por el usuario
+		Scanner escaneo = new Scanner(System.in);
+		escaneo.close();
+		//calculo del imc;
+		//imc=kilos/(estatura*esatura);
+		
+		
+		Float estatura= 0f;
+		
+		System.out.println("ingrese su peso en kilos");
+		Float pesokilos= escaneo.nextFloat();
+	
+}

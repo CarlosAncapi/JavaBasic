@@ -1,0 +1,25 @@
+package cl.generation.f20221026;
+
+import java.util.Scanner;
+
+public class BucleDoWhileTest {
+
+	public static void main(String[] args) {
+		// doWhile
+		//a lo menos se ejecuta una vez
+		Scanner scanner = new Scanner(System.in);
+		
+		int edad =0;
+		
+		
+		do {
+			System.out.println("ingresa tu edad: ");
+			edad= scanner.nextInt();
+		}while(edad<=0);
+		
+		
+		
+		scanner.close();
+	}
+
+}

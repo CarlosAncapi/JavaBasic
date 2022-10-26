@@ -1,0 +1,13 @@
+package cl.generation.f20221026;
+
+import java.util.Scanner;
+
+public class CapturarDatos {
+
+	public static void main(String[] args) {
+		// Capturar datos ingresados por el usuario
+		Scanner escaneo = new Scanner(System.in);
+		escaneo.close();
+	}
+
+}

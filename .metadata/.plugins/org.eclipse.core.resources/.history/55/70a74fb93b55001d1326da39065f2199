@@ -1,0 +1,34 @@
+package cl.generation.f20221026;
+
+import java.util.Scanner;
+
+public class CapturarDatos {
+
+	public static void main(String[] args) {
+		
+		Float imcito =calculoIMC();
+		System.out.println("su imc es de: " +imcito );
+		
+	}
+	
+	public static Float calculoIMC() {
+		
+		// Capturar datos ingresados por el usuario
+				Scanner escaneo = new Scanner(System.in);
+
+				// calculo del imc;
+				// imc=kilos/(estatura*esatura);
+
+				System.out.println("ingrese su peso en kilos");
+				Float pesokilos = escaneo.nextFloat();
+
+				System.out.println("ingrese su estatura en metros");
+				Float estatura = escaneo.nextFloat();
+
+				Float imc = pesokilos / (estatura * estatura);
+				
+
+				escaneo.close();
+		return imc;
+	}
+}
