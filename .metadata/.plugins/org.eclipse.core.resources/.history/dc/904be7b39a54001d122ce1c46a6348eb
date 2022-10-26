@@ -1,0 +1,29 @@
+package cl.generation.f20221025;
+
+public class Funciones1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//llamar a un mrtodo
+		nombreMetodo1();
+		nombreMetodo2("Carlos");
+		
+	}
+	
+	
+	//definicion o estructura de un metodo
+	//void--> el metodo no retorna ningun valor 
+	public static void nombreMetodo1() {
+		System.out.println("Estoy dentro del metodo inicial...");	
+	}
+	public static void nombreMetodo2(String nombre) {
+		System.out.println("Hola soy: "+nombre);	
+	}
+	
+	public static void metodo3(int x, int y) {
+		
+				int suma =x+y;
+				return suma;
+	}
+	
+}

@@ -1,0 +1,17 @@
+package cl.generation.f20221025;
+
+public class Funciones1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//llamar a un mrtodo
+		nombreMetodo();
+	}
+	//definicion o estructura de un metodo
+	//void--> el metodo no retorna ningun valor 
+	public static void nombreMetodo() {
+		System.out.println("Estoy dentro del metodo inicial...");
+		
+	}
+	
+}

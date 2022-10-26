@@ -1,0 +1,65 @@
+package cl.generation.f20221025;
+
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class EjercicioGrupoArreglos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] numeros = new int[6];
+		numeros[0] = 1;
+		numeros[1] = 2;
+		numeros[2] = 3;
+		numeros[3] = 4;
+		numeros[4] = 5;
+		numeros[5] = 6;
+		int i = 0;
+
+		// el ciclo while ciclara hasta que se rompa
+		// la condicion que esta en el parentesis
+		// por eso se detendra cuando numeros[i]=5
+		while (numeros[i] != 5) {
+			i++;
+		}
+		System.out.println(i);
+
+		// presentacion sobre diferencias entre:
+
+		// hashmap :
+		// como recorrer un arreglo con while
+		// y con iterator
+		
+		//como se crea un Hashmap
+		HashMap<String, String> seriesFavoritas = new HashMap<String, String>();
+		
+		//como añadir elementos al hashMap
+		seriesFavoritas.put("Carlos", "Sons of Anarchy");
+		seriesFavoritas.put("Ivan", "Better Call Saul");
+		seriesFavoritas.put("Ignacia", "Young Royals");
+		seriesFavoritas.put("Michel", "Mandalorian");
+		seriesFavoritas.put("Maria Teresa", "One Piece");
+
+		System.out.println(seriesFavoritas);
+		
+		
+		Iterator it = seriesFavoritas.keySet().iterator();
+		
+		while(it.hasNext()){
+		    String clave = (String)it.next();
+		    String valor = seriesFavoritas.get(clave);
+		    System.out.println("Clave: " + clave + ", valor: " + valor);
+		}
+
+		// hashset :
+		// como recorrer un arreglo con while
+		// y con iterator
+
+		// arraylist :
+		// como recorrer un arreglo con while
+		// y con iterator
+
+	}
+
+}

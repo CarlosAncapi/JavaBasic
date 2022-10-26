@@ -1,0 +1,23 @@
+package cl.generation.f20221025;
+import java.util.HashMap;
+
+public class EjercicioHashMap {
+
+	public static void main(String[] args) {
+		
+		
+		
+		HashMap<String, String> seriesFavoritas = new HashMap<String, String>();
+
+		
+		seriesFavoritas.put("Carlos", "Sons of Anarchy");
+		seriesFavoritas.put("Ivan", "Better Call Saul");
+		seriesFavoritas.put("Ignacia", "Young Royals");
+		seriesFavoritas.put("Michel", "Mandalorian");
+		seriesFavoritas.put("Maria Teresa", "One Piece");
+
+		System.out.println(seriesFavoritas);
+		
+	}
+
+}

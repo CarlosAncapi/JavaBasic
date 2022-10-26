@@ -1,0 +1,50 @@
+package cl.generation.f20221026;
+
+import java.util.Arrays;
+
+public class Funciones1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//llamar a un mrtodo
+		nombreMetodo1();
+		nombreMetodo2("Carlos");
+		metodo3(4, 5);
+		String[] vocales = {"a","e","i","o","u"};
+		metodo5(vocales);
+		
+		System.out.println(retorno1());
+		int retornito = retorno1();
+		System.out.println(retornito);
+	}
+	
+	
+	//definicion o estructura de un metodo
+	//void--> el metodo no retorna ningun valor 
+	public static void nombreMetodo1() {
+		System.out.println("Estoy dentro del metodo inicial...");	
+	}
+	public static void nombreMetodo2(String nombre) {
+		System.out.println("Hola soy: "+nombre);	
+	}
+	
+	public static void metodo3(int x, int y) {
+		
+				int suma =x+y;
+				System.out.println(suma);
+	}
+	
+	public static void metodo5(String[] arreglito) {
+		System.out.println("Soy el arreglo "+Arrays.toString(arreglito));
+
+	}
+	
+	//funciones con retorno
+	
+	public static Integer retorno1(){
+				
+		Integer numero = 22;
+		return numero;
+	};
+
+}

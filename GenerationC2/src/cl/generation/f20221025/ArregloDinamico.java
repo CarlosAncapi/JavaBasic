@@ -1,6 +1,7 @@
 package cl.generation.f20221025;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArregloDinamico {
 
@@ -67,6 +68,28 @@ public class ArregloDinamico {
 			System.out.println(relator);
 		}
 		
+		
+		
+		
+		
+		
+		// ArrayList con numeros recorrido
+		ArrayList<Integer> numeros = new ArrayList<Integer>();
+		numeros.add(2);
+		numeros.add(3);
+		numeros.add(4);
+		numeros.add(5);
+		System.out.println("Los numeros dentro del arreglo son:");
+		for (Integer numero : numeros) { // for (tipoDeDato variable:Arreglo)
+			System.out.println(numero);
+		}
+
+		// 7. como recorrer con while y iterator
+		System.out.println("*********Iterador**********");
+		Iterator it = numeros.iterator();// iterator es un indice
+		while (it.hasNext()) // el Nex me dice que a la siguiente vuielta tome el siguiente valor
+			System.out.println(it.next());
+
 	}
 
 }
