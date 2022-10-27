@@ -1,0 +1,34 @@
+package cl.generation.f20221027;
+
+public class UsoObjeto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//instancia de clase
+		Auto auto1= new Auto();
+		
+		//Se asignan valores a traves del metodo setter
+		auto1.setMarca("Nissan");
+		auto1.setColor("Rojo");
+		
+		
+		//consultar el contenido de los atributos
+		
+		String colorsito =auto1.getColor();
+		System.out.println(colorsito);
+		System.out.println("--------------------------------------------------");
+		String colorsito2 ="Verde";
+		System.out.println(colorsito2);
+		System.out.println("--------------------------------------------------");
+		
+		String modelito=auto1.getModelo();
+		System.out.println(modelito);
+		System.out.println("--------------------------------------------------");
+		
+		//imprimir el contenido del objeto auto1
+		System.out.println(auto1.toString());
+		System.out.println("--------------------------------------------------");		
+
+	}
+
+}
