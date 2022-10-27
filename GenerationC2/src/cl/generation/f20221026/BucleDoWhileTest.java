@@ -20,6 +20,7 @@ public class BucleDoWhileTest {
 		System.out.println("--------------------------------");
 		
 		
+		
 		float kilos =0f;
 		do {
 			System.out.println("ingresa tu peso en kilos: ");

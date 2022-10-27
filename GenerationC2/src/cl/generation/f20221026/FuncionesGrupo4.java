@@ -18,7 +18,7 @@ public class FuncionesGrupo4 {
 		System.out.println(IMC);	
 		System.out.println("su imc dice que: "+ tipoIMC);
 		
-		
+		scanner.close();
 	}
 	/*metodo que devuelve el nombre completo 
 	 * 
@@ -33,7 +33,6 @@ public class FuncionesGrupo4 {
 		System.out.println("ingresa tu apellido materno");
 		String apeMaterno= scanner.next();
 		String nombreCompleto = nombre+" "+apePaterno+" "+apeMaterno;
-		//scanner.close();
 		return nombreCompleto;
 		
 	}

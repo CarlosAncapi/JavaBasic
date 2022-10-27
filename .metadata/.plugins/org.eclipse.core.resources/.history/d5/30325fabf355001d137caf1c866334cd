@@ -1,0 +1,10 @@
+package cl.generation.f20221027;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		// Menu 
+		
+	}
+
+}

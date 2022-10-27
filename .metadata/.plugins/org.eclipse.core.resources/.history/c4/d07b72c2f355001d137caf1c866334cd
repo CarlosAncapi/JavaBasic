@@ -1,0 +1,23 @@
+package cl.generation.f20221027;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		// Menu 
+		//calculadora con 4 operaciones basicas
+		//solicitar 2 numeros float
+		//imprimir los resultados y guardar en una variable
+		//ofrecer opciones de repeticion (bucles)
+		//definir los metodos
+		//validaciones
+		//terminar la ejecucion
+		//limpiar las variables
+		
+	}
+	public static void menu() {
+		System.out.println("-------------------------------------");
+		
+		System.out.println("-------------------------------------");
+		
+	}
+}

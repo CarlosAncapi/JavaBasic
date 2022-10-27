@@ -1,0 +1,62 @@
+package cl.generation.f20221027;
+
+import java.util.Scanner;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int opciones =0;
+		int contadorError=4;
+		// Menu de opciones
+		//terminar la ejecucion
+		menu();
+		do {
+			System.out.println("Seleccione una opcion");
+			opciones = scanner.nextInt();
+			
+			//si la opcion es cero, salir del do-while
+			if(opciones==0) {
+				System.out.println("Usted a salido del programa");
+				break;
+			}else if(opciones< 0 || opciones >4){//condicion de error
+				contadorError--;
+				System.out.println("Te quedan "+contadorError+ " intentos" );
+			}
+			
+			
+			if(contadorError==0) {
+				System.out.println("Agoto la cantidad de intentos, chaolin!!");
+				break;
+			}
+			
+			
+		} while (opciones<0 || opciones>4 );
+		
+		System.out.println("estas fuera del menu do while, la ultima opcion elegida es: "+opciones);
+		
+		//calculadora con 4 operaciones basicas
+		//solicitar 2 numeros float
+		//imprimir los resultados y guardar en una variable
+		//ofrecer opciones de repeticion (bucles)
+		//definir los metodos2
+		//validaciones
+		//terminar la ejecucion
+		//limpiar las variables
+		
+	}
+	public static void menu() {
+		System.out.println("-------------------------------------------");
+		System.out.println("                 Menú de opciones");
+		System.out.println("-------------------------------------------");
+		System.out.println("para sumar ingresa el numero           '1' ");
+		System.out.println("para restar ingresa el numero          '2' ");
+		System.out.println("para multiplicar ingresa el numero     '3' ");
+		System.out.println("para dividir ingresa el numero         '4' ");
+		System.out.println("para dsalir del menu ingresa el numero '5' ");
+		System.out.println("-------------------------------------------");
+		
+		
+		
+	}
+}

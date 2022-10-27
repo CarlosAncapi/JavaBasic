@@ -1,0 +1,107 @@
+package cl.generation.f20221027;
+
+import java.util.Scanner;
+
+public class Menu {
+
+	public static void main(String[] args) {
+
+		// Menu de opciones
+		// terminar la ejecucion
+		menu();
+
+		// calculadora con 4 operaciones basicas
+		// solicitar 2 numeros float
+		// imprimir los resultados y guardar en una variable
+		// ofrecer opciones de repeticion (bucles)
+		// definir los metodos2
+		// validaciones
+		// terminar la ejecucion
+		// limpiar las variables
+
+	}
+
+	public static void menu() {
+		System.out.println("-------------------------------------------");
+		System.out.println("                 Menú de opciones");
+		System.out.println("-------------------------------------------");
+		System.out.println("para sumar ingresa el numero           '1' ");
+		System.out.println("para restar ingresa el numero          '2' ");
+		System.out.println("para multiplicar ingresa el numero     '3' ");
+		System.out.println("para dividir ingresa el numero         '4' ");
+		System.out.println("para dsalir del menu ingresa el numero '5' ");
+		System.out.println("-------------------------------------------");
+
+		Scanner scanner = new Scanner(System.in);
+		int opciones = 0;
+		int contadorError = 4;
+		
+		
+		do {
+			System.out.println("Seleccione una opcion");
+			opciones = scanner.nextInt();
+
+			// si la opcion es cero, salir del do-while
+			if (opciones == 0) {
+				System.out.println("Usted a salido del programa");
+				break;
+			} else if (opciones < 0 || opciones > 4) {// condicion de error
+				contadorError--;
+				System.out.println("Te quedan " + contadorError + " intentos");
+			}
+
+			if (contadorError == 0) {
+				System.out.println("Agoto la cantidad de intentos, chaolin!!");
+				break;
+			}
+
+		} while (opciones < 0 || opciones > 4);
+		
+		
+		//
+		if(opciones ==0 || contadorError==0) {
+			System.err.println("Adios!!");
+		}else {//solo ingresara cuando la variable valga 1, 2 , 3 o 4
+			
+			float numero1=0;
+			float numero2=0;
+			float resultado=0;
+				
+			System.out.println("estas fuera del menu do while, el ultimo valor de la variable opciones es: " + opciones);
+			
+			System.out.println("ingrese el primer numero");
+			numero1= scanner.nextFloat();
+			System.out.println("ingrese el segundo numero");
+			numero2= scanner.nextFloat();
+			
+			switch (opciones) {
+			case 1:
+				resultado=numero1+numero2;
+				System.out.println("el resultado de la suma es: "+resultado);
+				break;
+				
+			case 2:
+				resultado=numero1-numero2;
+				System.out.println("el resultado de la resta es: "+resultado);
+				break;
+				
+			case 3:
+				resultado=numero1*numero2;
+				System.out.println("el resultado de la multiplicacion es: "+resultado);
+				
+				break;
+				
+			case 4:
+				resultado=numero1/numero2;
+				System.out.println("el resultado de la division es: "+resultado);
+				break;	
+				
+
+			default:
+				break;
+			}
+		}
+		
+
+	}
+}
