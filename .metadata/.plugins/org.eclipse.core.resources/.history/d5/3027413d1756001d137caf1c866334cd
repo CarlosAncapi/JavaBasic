@@ -71,7 +71,7 @@ public class Menu {
           
 			System.out.println("*Ingresar valor de la base del triangulo en centimetros*");
 			float lado1 = sc.nextFloat();
-			System.out.println("*Ingresar valor uno de los lados (catetos) del triangulo en centimetros*");
+			System.out.println("*Ingresar valor uno de los lados 'catetos' del triangulo en centimetros*");
 			float lado2 = sc.nextFloat();
 			
 			basetriangulo =lado1;
