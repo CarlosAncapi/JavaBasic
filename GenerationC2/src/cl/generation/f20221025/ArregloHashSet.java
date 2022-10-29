@@ -60,7 +60,7 @@ public class ArregloHashSet {
 
 		System.out.println("----------------------");
 
-		System.out.println(grupo4);
+		// System.out.println(grupo4);
 
 	}
 

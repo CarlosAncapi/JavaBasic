@@ -1,0 +1,51 @@
+package cl.generation.f20221028;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MainEstudiante {
+
+	public static void main(String[] args) {
+		/*
+		 * // TODO Auto-generated method stub Estudiante alumno1 = new
+		 * Estudiante("Carlos", "ancapi", "1234556-5"); // imprimiendo con metodo
+		 * toString System.out.println(alumno1.toString()); // añadiendo los elementos
+		 * faltantes al objeto creado anteriormente alumno1.setEdad(28);
+		 * alumno1.setCurso("1ero A"); alumno1.setCorreo("carlitos@generation.cl"); //
+		 * imprimiendo el objeto con todo los parametros agregados
+		 * System.out.println(alumno1.toString()); //ingresoEstudiantes();
+		 */	
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>();
+		int continuar=1;
+		do {
+			Estudiante estudiante=new Estudiante();
+			System.out.println("ingrese el nombre del estudiante ");
+			String nombre =sc.nextLine();
+			System.out.println("ingrese el Apellido del estudiante ");
+			String apellido =sc.nextLine();
+			System.out.println("ingrese la edad del estudiante ");
+			Integer edad = sc.nextInt();
+			sc.nextLine();//corrige el error de capturar un numero y depues capturar una cadena de texto
+			System.out.println("ingrese el rut del estudiante ");
+			String rut =sc.nextLine();
+			System.out.println("ingrese el curso del estudiante ");
+			String curso =sc.nextLine();
+			System.out.println("ingrese el correo del estudiante ");
+			String correo =sc.nextLine();
+			
+			estudiantes.add(estudiante);
+			
+			System.out.println("quiere agregar otro estudiante");
+			System.out.println("ingresa el numero (1) si quieres agregar un nuevo alumno");
+			System.out.println("ingresa el numero (2) si no quieres continuar");
+			continuar=sc.nextInt();
+			
+			
+		}while(continuar==1);
+		
+		System.out.println(estudiantes);
+		
+	}
+	
+}

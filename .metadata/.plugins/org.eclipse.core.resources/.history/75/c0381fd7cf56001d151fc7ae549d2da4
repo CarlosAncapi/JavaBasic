@@ -1,0 +1,22 @@
+package cl.generation.f20221028;
+
+public class MainEstudiante {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Estudiante alumno1= new Estudiante("Carlos","ancapi","1234556-5");
+		//imprimiendo con metodo toString
+		System.out.println(alumno1.toString());
+		//añadiendo los elementos faltantes al objeto creado anteriormente
+		alumno1.setEdad(28);
+		alumno1.setCurso("1ero A");
+		alumno1.setCorreo("carlitos@generation.cl");
+		//imprimiendo el objeto con todo los parametros agregados
+		System.out.println(alumno1.toString());
+		
+		
+		
+		
+	}
+
+}
