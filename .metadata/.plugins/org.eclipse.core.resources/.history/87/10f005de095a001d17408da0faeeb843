@@ -1,0 +1,56 @@
+package epe2;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		Integer continuar=1;
+		
+		do {
+			TablasMultiplicar multiplicacion = new TablasMultiplicar();
+			
+			System.out.println("Bienvenido al programa para multiplicar");
+			System.out.println("---------------------------------------");
+			
+			System.out.println("por favor ingrese el numero que desea multiplicar");
+			Integer num1 =sc.nextInt();
+			System.out.println("---------------------------------------");
+			
+			System.out.println("por favor ingrese la cantidad de veces que lo desea multiplicar");
+			Integer limite=sc.nextInt();
+			System.out.println("---------------------------------------");
+			
+			System.out.println("se multiplicara el numero: "+num1+", hasta el numero: "+limite);
+			System.out.println();
+			
+			TablasMultiplicar.Multiplos(num1, limite);
+			System.out.println("---------------------------------------");
+			
+			
+			System.out.println("desea usar el programa otra vez?");
+			System.out.println("---------------------------------------");
+			System.out.println("presione 1 para continuar en el programa");
+			System.out.println("presione 2 para salir del programa ");
+			continuar = sc.nextInt();
+			
+			if(continuar==1) {
+				System.out.print("\033[H\033[2J");
+				System.out.flush();
+				System.out.println("Usted decidio usar el programa otra vez");
+				
+				
+			}else {
+				System.out.println("usted decidio salir del programa ");
+			}
+			
+			
+			
+		} while (continuar ==1);
+		
+	}
+
+}

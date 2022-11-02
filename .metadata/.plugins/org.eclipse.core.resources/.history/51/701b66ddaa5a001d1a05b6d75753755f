@@ -1,0 +1,9 @@
+package cl.generation.f20221102;
+
+public class Entrenador {
+	
+	private int anios_experiencia;
+	private String equipo;
+	
+	
+}

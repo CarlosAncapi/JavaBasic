@@ -1,0 +1,45 @@
+package epe2;
+
+public class TablasMultiplicar {
+	
+	private Float num1;
+	private Integer limite;
+	
+	public TablasMultiplicar() {
+		super();
+	}
+
+	public TablasMultiplicar(Float num1, Integer limite) {
+		super();
+		this.num1 = num1;
+		this.limite = limite;
+	}
+
+	public Float getNum1() {
+		return num1;
+	}
+
+	public void setNum1(Float num1) {
+		this.num1 = num1;
+	}
+
+	public Integer getLimite() {
+		return limite;
+	}
+
+	public void setLimite(Integer limite) {
+		this.limite = limite;
+	}
+
+	@Override
+	public String toString() {
+		return "TablasMultiplicar [num1=" + num1 + ", limite=" + limite + "]";
+	}
+	
+	public static void Multiplos(Float num1, Integer limite) {
+		for (Integer i = 1  ; i <= limite ; i++) {
+			System.out.println(num1+" x "+i+" = "+(num1*i));
+		}
+	}
+
+}

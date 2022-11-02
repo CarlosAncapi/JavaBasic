@@ -1,0 +1,43 @@
+package cl.generation.f20221102;
+
+import java.util.ArrayList;
+
+public class MainCurso {
+
+	public static void main(String[] args) {
+		
+		Alumnos alumno1 = new Alumnos();
+		
+		ArrayList<Alumnos> array_alumnos= new ArrayList<Alumnos>();
+		
+		alumno1.setNombre("pedrito");
+		alumno1.setApellido("perez");
+		alumno1.setEdad(15);
+		alumno1.setCurso("segundo");
+		
+		array_alumnos.add(alumno1);
+		
+		
+		Profesor profesor1 = new Profesor();
+		
+		ArrayList<Profesor> listaProfesores = new ArrayList<Profesor>();
+		
+		profesor1.setNombre("pedrito");
+		profesor1.setApellido("perez");
+		profesor1.setEdad(15);
+		profesor1.setAniosExperiencia(10);
+		profesor1.setAsignatura("Lenguaje");
+		
+		
+		listaProfesores.add(profesor1);
+		
+		Directivos directivo1= new Directivos();
+		
+		directivo1.set
+		
+		ArrayList<Directivos> listaDirectivos = new ArrayList<Directivos>();
+
+
+	}
+
+}

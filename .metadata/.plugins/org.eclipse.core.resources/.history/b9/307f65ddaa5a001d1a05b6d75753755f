@@ -1,0 +1,8 @@
+package cl.generation.f20221102;
+
+public class Kinesiologo {
+	
+	private String titulo;
+	private String especialidad;
+	
+}

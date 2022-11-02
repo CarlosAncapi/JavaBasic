@@ -1,0 +1,36 @@
+package cl.generation.f20221102;
+
+public class Basquebolista {
+	
+	private Float peso;
+	private Float altura;
+	
+	public Basquebolista() {
+		super();
+	}
+
+	public Basquebolista(Float peso, Float altura) {
+		super();
+		this.peso = peso;
+		this.altura = altura;
+	}
+
+	public Float getPeso() {
+		return peso;
+	}
+
+	public void setPeso(Float peso) {
+		this.peso = peso;
+	}
+
+	public Float getAltura() {
+		return altura;
+	}
+
+	public void setAltura(Float altura) {
+		this.altura = altura;
+	}
+	
+	
+
+}

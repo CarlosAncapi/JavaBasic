@@ -1,0 +1,40 @@
+package cl.generation.f20221102;
+
+public class Directivos {
+	
+	private Float cargo;
+	private Float nombreInstitucion;
+	
+	public Directivos() {
+		super();
+	}
+	
+	public Directivos(Float cargo, Float nombreInstitucion) {
+		super();
+		this.cargo = cargo;
+		this.nombreInstitucion = nombreInstitucion;
+	}
+	
+	public Float getCargo() {
+		return cargo;
+	}
+	
+	public void setCargo(Float cargo) {
+		this.cargo = cargo;
+	}
+	
+	public Float getNombreInstitucion() {
+		return nombreInstitucion;
+	}
+	
+	public void setNombreInstitucion(Float nombreInstitucion) {
+		this.nombreInstitucion = nombreInstitucion;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Directivos [cargo=" + cargo + ", nombreInstitucion=" + nombreInstitucion + "]";
+	}
+
+}

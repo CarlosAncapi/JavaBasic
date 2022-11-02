@@ -1,0 +1,33 @@
+package epe2;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int continuar=1;
+		
+		do {
+			TablasMultiplicar multiplicacion = new TablasMultiplicar();
+			
+			System.out.println("Bienvenido al programa para multiplicar");
+			System.out.println("---------------------------------------");
+			
+			System.out.println("por favor ingrese el numero que desea multiplicar");
+			Float num1 =sc.nextFloat();
+			System.out.println("---------------------------------------");
+			
+			System.out.println("por favor ingrese la cantidad de veces que lo desea multiplicar");
+			Integer limite=sc.nextInt();
+			
+			Multiplos(num1,limite);
+			
+			
+			
+		} while (continuar ==1);
+		
+	}
+
+}
