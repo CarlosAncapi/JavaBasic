@@ -1,0 +1,25 @@
+package cl.generation.f20221102.poli;
+
+public class Gato extends Mascota {
+	
+	private String sonido;
+
+	public Gato() {
+		super();
+	}
+
+	public Gato(String sonido) {
+		super();
+		this.sonido = sonido;
+	}
+
+	public Gato(String raza, String nombre, String sexo, String sonido) {
+		super(raza, nombre, sexo);
+		this.sonido = sonido;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,13 @@
+package cl.generation.f20221102.poli;
+
+public class PoliMain {
+
+	public static void main(String[] args) {
+		// Polimorfismo
+		
+		Mascota mascota = new Mascota();
+		mascota.emitirSonido();
+		
+	}
+
+}

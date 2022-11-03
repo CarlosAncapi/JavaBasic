@@ -7,6 +7,14 @@ public class Profesor extends PersonaCurso {
 	public Profesor() {
 		super();
 	}
+	
+	//constructor asignando los atributos de la clase padre de manera directa
+	public Profesor(String nombre, String apellido, int edad, int aniosExperiencia, String asignatura) {
+		super(nombre, apellido, edad);
+		this.aniosExperiencia = aniosExperiencia;
+		this.asignatura = asignatura;
+	}
+
 
 	public Profesor(int aniosExperiencia, String asignatura) {
 		super();

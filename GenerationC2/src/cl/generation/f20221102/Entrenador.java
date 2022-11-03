@@ -8,6 +8,18 @@ public class Entrenador extends EquipoBasquetbol{
 	public Entrenador() {
 		super();
 	}
+	
+	
+	
+
+	public Entrenador(String nombre, String apellido, int edad, int anios_experiencia, String equipo) {
+		super(nombre, apellido, edad);//pasando valores al constructor de la super clase (clase padre)
+		this.anios_experiencia = anios_experiencia;
+		this.equipo = equipo;
+	}
+
+
+
 
 	public Entrenador(int anios_experiencia, String equipo) {
 		super();
@@ -38,10 +50,12 @@ public class Entrenador extends EquipoBasquetbol{
 	}
 
 	
-
 	
+	@Override
+	public void metodoImprimir() {
+		System.out.println("estoy en el metodo imprimir de la clase Entrenador ");
+	}
 	
-
 	
 	
 	

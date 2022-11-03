@@ -1,0 +1,16 @@
+package cl.generation.f20221102.interfaces;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// interfaces y clases abstractas
+		
+		//no se pueden instanciar clases abstractas
+		//Animal animal= new Animal();
+		
+		Caballo caballo = new caballo();
+		caballo.
+		
+	}
+
+}

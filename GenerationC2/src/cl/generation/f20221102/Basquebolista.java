@@ -37,6 +37,10 @@ public class Basquebolista extends EquipoBasquetbol {
 				+ ", getApellido()=" + getApellido() + ", getEdad()=" + getEdad() + "]";
 	}
 	
+	@Override
+	public void metodoImprimir() {
+		System.out.println("estoy en el metodo imprimir de la clase Basquebolista ");
+	}
 	
 
 }

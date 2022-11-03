@@ -1,0 +1,10 @@
+package cl.generation.f20221102;
+
+public class PoliMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package cl.generation.f20221102.poli;
+
+public class PoliMain {
+
+	public static void main(String[] args) {
+		// Polimorfismo
+		
+		Mascota mascota = new Mascota();
+		mascota.emitirSonido();
+		System.out.println("--------------------------------------");
+		
+		Gato gatito = new Gato();
+		gatito.emitirSonido();
+		System.out.println("--------------------------------------");
+		
+		Perro perrito= new Perro();
+		perrito.emitirSonido();
+		System.out.println("--------------------------------------");
+		
+	}
+
+}

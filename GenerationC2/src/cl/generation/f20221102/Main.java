@@ -49,6 +49,21 @@ public class Main {
 			System.out.println(jugador.toString());
 		}
 		
+		//
+		Entrenador ayudanteEntrenador = new Entrenador("carlos","Ancapi",28,10,"colo");
+		
+		System.out.println(ayudanteEntrenador);
+		
+		//EquipoBasquetbol.metodoImprimir();
+		EquipoBasquetbol equi = new EquipoBasquetbol();
+		Ayudante ayu = new Ayudante();
+		
+		equi.metodoImprimir();
+		entrenador.metodoImprimir();
+		kine.metodoImprimir();
+		basque1.metodoImprimir();
+		ayu.metodoImprimir();
+		
 	}
 
 	
