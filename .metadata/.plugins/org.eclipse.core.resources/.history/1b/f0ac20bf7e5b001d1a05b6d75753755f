@@ -1,0 +1,37 @@
+package cl.generation.f20221103;
+
+import java.util.ArrayList;
+
+public class Usuario {
+	
+	private String nombre;
+	private String corrreo;
+	private String password;
+	private String apellido;
+	private String nick;
+	
+	//private ArrayList<String> telefonos;
+	private ArrayList<Telefono> telefonos;
+	
+	//un objeto de colaboracion para pasarlo como atributo a el objeto Usuario
+	
+	
+	
+	/*
+	public Usuario() {
+		super();
+		this.telefonos= new ArrayList<String>();
+	}
+	*/
+	private Direccion direccion;
+	
+	
+	public Usuario() {
+		super();
+		this.telefonos= new ArrayList<Telefono>();
+	}
+	
+
+	
+	
+}

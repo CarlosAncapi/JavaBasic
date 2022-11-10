@@ -1,0 +1,10 @@
+package cl.generation.f20221103;
+
+public class Telefono {
+	
+	private String numero;
+	private String compannia;
+	private Boolean plan;
+	private Boolean internet;
+	
+}

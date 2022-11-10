@@ -1,0 +1,23 @@
+package cl.generation.f20221103;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Usuario usuario = new Usuario();
+		
+		ArrayList <String> telefono = new ArrayList <String>();
+		String telefonito = "123456789";
+		telefono.add(telefonito);
+		telefono.add("543452342");
+		
+			
+		
+		usuario.setTelefonos(telefono);
+		System.out.println(telefono);
+
+}
+
+}
